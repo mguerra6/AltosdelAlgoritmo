@@ -22,11 +22,11 @@
             android:layout_height="wrap_content"
             android:text="@string/repote_1"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txtsombraybalcon"
+            android:id="@+id/txtsomybal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:text="@string/reporte_2"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:text="@string/reporte_3"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:text="@string/reporte_5"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TableLayout
