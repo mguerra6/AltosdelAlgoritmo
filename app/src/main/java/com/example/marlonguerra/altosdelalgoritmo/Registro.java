@@ -137,6 +137,7 @@ public class Registro extends AppCompatActivity {
         }
     }
 
+
     public void modificar(View v){
         Apartamento p,p2;
         String metrocuadrado, precio, piso, balcom="", sombra="";

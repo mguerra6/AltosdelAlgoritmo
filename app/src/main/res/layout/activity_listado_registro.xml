@@ -8,8 +8,8 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -32,43 +32,50 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/numero" />
+                    android:text="@string/numero"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Nomenclatura" />
+                    android:text="@string/Nomenclatura"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/metro_cuadrado" />
+                    android:text="@string/metro_cuadrado"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Precio" />
+                    android:text="@string/Precio"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Piso" />
+                    android:text="@string/Piso"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/balcon" />
+                    android:text="@string/balcon"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sombra" />
+                    android:text="@string/sombra"
+                    android:textAlignment="center" />
             </TableRow>
 
         </TableLayout>

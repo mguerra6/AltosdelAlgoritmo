@@ -22,10 +22,11 @@
             android:layout_height="wrap_content"
             android:text="@string/repote_1"
             android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/txtsombraybalcon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
@@ -36,10 +37,11 @@
             android:layout_height="wrap_content"
             android:text="@string/reporte_2"
             android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/txtapartamentocaro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
@@ -50,10 +52,11 @@
             android:layout_height="wrap_content"
             android:text="@string/reporte_3"
             android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/txtapartamentogrande"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
@@ -64,12 +67,46 @@
             android:layout_height="wrap_content"
             android:text="@string/reporte_5"
             android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView16"
+        <TableLayout
+            android:id="@+id/tblPromedioTamañoPorPiso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center" />
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:stretchColumns="*"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numero"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Piso"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/promedio"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+        </TableLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
