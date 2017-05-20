@@ -11,9 +11,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class Reporte extends AppCompatActivity {
-    private EditText reporte1;
-    private EditText reporte2;
-    private EditText reporte3;
+
+
+    private TextView reporte1;
+    private TextView reporte2;
+    private TextView reporte3;
 
     private TableLayout PromedioTamañoPorPiso;
     private ArrayList<Apartamento> apartamentos2;
@@ -23,13 +25,19 @@ public class Reporte extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporte);
 
-        reporte1 = (EditText)findViewById(R.id.txtsomybal);
-        reporte2 = (EditText)findViewById(R.id.txtapartamentocaro);
-        reporte3 = (EditText)findViewById(R.id.txtapartamentogrande);
+        int cantidad = 0;
+        cantidad = Datos.ApartamentosConSombraYBalcon(getApplicationContext());
+        reporte1 = (TextView)findViewById(R.id.txtsomybal);
+        reporte1.setText(String.valueOf(cantidad));
 
-        PromedioTamañoPorPiso = (TableLayout)findViewById(R.id.tblPromedioTamañoPorPiso);
-        apartamentos2 = Datos.traerPersonas(getApplicationContext());
 
+        int precio = 0;
+        cantidad = Datos.ApartamentosmasCaro(getApplicationContext());
+        reporte1 = (TextView)findViewById(R.id.txtapartamentocaro);
+        reporte1.setText(String.valueOf(cantidad));
+
+
+    /*
         for (int i = 0; i <apartamentos2.size() ; i++) {
             TableRow fila = new TableRow(this);
             TextView c1 = new TextView(this);
@@ -51,12 +59,13 @@ public class Reporte extends AppCompatActivity {
         }
 
 
-
+*/
     }
+    /*
     public void Reporte1(View v){
         Apartamento p;
-        String balcom, sombra;;
-        if(validarNomenclatura()) {
+        String balcom, sombra;
+        if(validateRequestPermissionsRequestCode();) {
             p = Datos.buscarApartamento(getApplicationContext(), cajanomenclatura.getText().toString());
             if(p!=null){
                 cajametrocuadrado.setText(p.getMetrocuadrado());
@@ -69,4 +78,7 @@ public class Reporte extends AppCompatActivity {
             }
         }
     }
+    */
+
+
 }
