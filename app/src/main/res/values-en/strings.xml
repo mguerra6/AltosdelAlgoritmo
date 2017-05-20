@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Mts2">square meter</string>
+    <string name="Nomenclatura">nomenclature</string>
+    <string name="Piso">floor</string>
+    <string name="Precio">price</string>
+    <string name="app_name">Algorithm Heights</string>
+    <string name="balcon">Balcony</string>
+    <string name="metro_cuadrado">Square meter</string>
+    <string name="listadoregistro">Record listing</string>
+    <string name="numero">No</string>
+    <string name="registrar">register</string>
+    <string name="registro">Registry</string>
+    <string name="reporte_2">Floor in which is the most expensive apartment in the building</string>
+    <string name="reporte">Report</string>
+    <string name="reporte_3">Nomenclature and square meters of the larger apartment in the whole building</string>
+    <string name="reporte_5">Average size of apartments per floor</string>
+    <string name="repote_1">Apartments are in the shade and have balcony</string>
+    <string name="sombra">Shadow</string>
+    <string name="apartamento_eliminado">Successfully Deleted Apartment</string>
+    <string name="borrar">Delete</string>
+    <string name="buscar">Search</string>
+    <string name="cancelar">Cancel</string>
+    <string name="conf_eliminar">Are you sure you want to delete this apartment?</string>
+    <string name="confirmar">Confirmation</string>
+    <string name="eliminar">Remove</string>
+    <string name="error_1">Enter the nomenclature</string>
+    <string name="error_2">Enter the price</string>
+    <string name="error_3">Enter the floor</string>
+    <string name="error_4">Enter the square meters</string>
+    <string name="limpiar">Clean</string>
+    <string name="mens_1">Apartment Saved Successfully</string>
+    <string name="mens_mod">Successfully Modified Apartment</string>
+    <string name="modificar">Modify</string>
+</resources>
