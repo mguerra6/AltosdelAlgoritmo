@@ -12,6 +12,8 @@ import java.util.ArrayList;
 
 public class Datos {
 
+    private static Apartamento a;
+
     public static ArrayList<Apartamento> traerPersonas(Context contexto){
     ArrayList<Apartamento> apartamentos = new ArrayList<>();
 
@@ -104,29 +106,86 @@ public class Datos {
         return cantidad;
     }
 
-    //Reporte # 1
-    public static int ApartamentosmasCaro(Context contexto){
+    //Reporte # 2
+    public static ArrayList<Apartamento> ApartamentosmasCaro(Context contexto){
+
+        ArrayList<Apartamento> apartamentos = new ArrayList<>();
 
         //Declarar variables
         SQLiteDatabase db;
         String sql, nomenclatura, metrocuadrado, precio, piso, balcom, sombra;
-        Apartamento p = null;
+
         //Abrir conexión de lectura
-        int cantidad;
         PersonasSQLiteOpenHelper aux = new PersonasSQLiteOpenHelper(contexto,"DBApartamentos",null,1);
         db = aux.getReadableDatabase();
 
         //Cursor
-        sql ="SELECT precio FROM Apartamentos " +
-                "ORDER BY precio ASC;";
+        sql = "SELECT * " +
+                "FROM Apartamentos  " +
+                "ORDER BY precio DESC LIMIT 1 ; ";
 
         Cursor c = db.rawQuery(sql,null);
 
-        cantidad = c.getCount();
-        //Recorrido del cursor
+        //recorremos el cursor
+        if (c.moveToFirst()) {
+            do {
+                nomenclatura = c.getString(0);
+                metrocuadrado = c.getString(1);
+                precio = c.getString(2);
+                piso = c.getString(3);
+                balcom = c.getString(4);
+                sombra = c.getString(5);
+
+                a = new Apartamento(nomenclatura, metrocuadrado, precio, piso, balcom, sombra);
+                apartamentos.add(a);
+
+            } while (c.moveToNext());
+
+        }
 
         db.close();
-        return cantidad;
+        return apartamentos;
+    }
+
+    //Reporte # 3
+    public static ArrayList<Apartamento> ApartamentosMayorTamanio(Context contexto){
+
+        ArrayList<Apartamento> apartamentos = new ArrayList<>();
+
+        //Declarar variables
+        SQLiteDatabase db;
+        String sql, nomenclatura, metrocuadrado, precio, piso, balcom, sombra;
+
+        //Abrir conexión de lectura
+        PersonasSQLiteOpenHelper aux = new PersonasSQLiteOpenHelper(contexto,"DBApartamentos",null,1);
+        db = aux.getReadableDatabase();
+
+        //Cursor
+        sql = "SELECT * " +
+                "FROM Apartamentos  " +
+                "ORDER BY metroscuadrados LIMIT 1;";
+
+        Cursor c = db.rawQuery(sql,null);
+
+        //recorremos el cursor
+        if (c.moveToFirst()) {
+            do {
+                nomenclatura = c.getString(0);
+                metrocuadrado = c.getString(1);
+                precio = c.getString(2);
+                piso = c.getString(3);
+                balcom = c.getString(4);
+                sombra = c.getString(5);
+
+                a = new Apartamento(nomenclatura, metrocuadrado, precio, piso, balcom, sombra);
+                apartamentos.add(a);
+
+            } while (c.moveToNext());
+
+        }
+
+        db.close();
+        return apartamentos;
     }
 
 }

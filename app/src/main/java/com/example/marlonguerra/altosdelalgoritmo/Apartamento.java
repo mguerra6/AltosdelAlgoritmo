@@ -8,12 +8,12 @@ import android.database.sqlite.SQLiteDatabase;
  */
 
 public class Apartamento {
-    String nomenclatura;
-    String metrocuadrado;
-    String precio;
-    String piso;
-    String balcom;
-    String sombra;
+    private String nomenclatura;
+    private String metrocuadrado;
+    private String precio;
+    private String piso;
+    private String balcom;
+    private String sombra;
 
     public Apartamento(String nomenclatura, String metrocuadrado, String precio, String piso, String balcom, String sombra) {
         this.nomenclatura = nomenclatura;
