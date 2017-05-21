@@ -42,30 +42,21 @@ public class Reporte extends AppCompatActivity {
         for (int i = 0; i <apartamentos2.size() ; i++) {
             TableRow fila = new TableRow(this);
             TextView c1 = new TextView(this);
-            TextView c2 = new TextView(this);
             TextView c3 = new TextView(this);
             TextView c4 = new TextView(this);
             TextView c5 = new TextView(this);
-            TextView c6 = new TextView(this);
-            TextView c7 = new TextView(this);
 
 
             c1.setText(""+(i+1));
-            c2.setText(apartamentos2.get(i).getNomenclatura());
-            c3.setText(apartamentos2.get(i).getMetrocuadrado());
             c4.setText(apartamentos2.get(i).getPrecio());
             c5.setText(apartamentos2.get(i).getPiso());
-            c6.setText(apartamentos2.get(i).getBalcom());
-            c7.setText(apartamentos2.get(i).getSombra());
+
 
 
             fila.addView(c1);
-            fila.addView(c2);
             fila.addView(c3);
             fila.addView(c4);
             fila.addView(c5);
-            fila.addView(c6);
-            fila.addView(c7);
 
             apartamentoCaro.addView(fila);
         }
@@ -80,28 +71,16 @@ public class Reporte extends AppCompatActivity {
             TextView c1 = new TextView(this);
             TextView c2 = new TextView(this);
             TextView c3 = new TextView(this);
-            TextView c4 = new TextView(this);
-            TextView c5 = new TextView(this);
-            TextView c6 = new TextView(this);
-            TextView c7 = new TextView(this);
 
 
             c1.setText(""+(i+1));
             c2.setText(apartamentos3.get(i).getNomenclatura());
             c3.setText(apartamentos3.get(i).getMetrocuadrado());
-            c4.setText(apartamentos3.get(i).getPrecio());
-            c5.setText(apartamentos3.get(i).getPiso());
-            c6.setText(apartamentos3.get(i).getBalcom());
-            c7.setText(apartamentos3.get(i).getSombra());
 
 
             fila.addView(c1);
             fila.addView(c2);
             fila.addView(c3);
-            fila.addView(c4);
-            fila.addView(c5);
-            fila.addView(c6);
-            fila.addView(c7);
 
             apartamentoGrande.addView(fila);
         }
