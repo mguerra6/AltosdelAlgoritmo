@@ -120,9 +120,8 @@ public class Datos {
         db = aux.getReadableDatabase();
 
         //Cursor
-        sql = "SELECT * " +
-                "FROM Apartamentos  " +
-                "ORDER BY precio DESC LIMIT 1 ; ";
+
+        sql = "SELECT * FROM Apartamentos  ORDER BY precio DESC  LIMIT 1 ";
 
         Cursor c = db.rawQuery(sql,null);
 
@@ -161,9 +160,7 @@ public class Datos {
         db = aux.getReadableDatabase();
 
         //Cursor
-        sql = "SELECT * " +
-                "FROM Apartamentos  " +
-                "ORDER BY metroscuadrados LIMIT 1;";
+        sql = "SELECT * FROM Apartamentos  ORDER BY metroscuadrados DESC LIMIT 1";
 
         Cursor c = db.rawQuery(sql,null);
 
